@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Competitors</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ <ion-grid>
+   <ion-row>
+     <ion-col>
+      <ion-card *ngFor="let comp of allCompetitors">
+        <ion-card-content>
+          <ion-label (click)="changeCompetitor(comp)">{{comp.competitor}}</ion-label>
+        </ion-card-content>
+      </ion-card>
+     </ion-col>
+   </ion-row> 
+ </ion-grid>
+
+</ion-content>
